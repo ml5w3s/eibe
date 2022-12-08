@@ -15,7 +15,8 @@ if($pass<>$conf){
         window.location.href = "../formulario/cad_usuario.php";
     </script>';
 }else{
-    $stm = $conn->prepare("INSERT INTO usuario(nome_usuario,bairro_usuario,senha) VALUES (?,?,?)");
+    $sql = ("INSERT INTO usuario(nome_usuario,bairro_usuario,senha) VALUES (?,?,?)");
+    $stm = $conn->prepare($sql);
     $stm->bindValue(1,$user,PDO::PARAM_STR);
     $stm->bindValue(2,$bairro,PDO::PARAM_STR);    
     $stm->bindValue(3,$pass,PDO::PARAM_STR);
@@ -26,6 +27,6 @@ if($pass<>$conf){
     </script>';
 }
 }catch(PDOException $ex_){
-    echo 'Erro '.$ex_->getMenssage();
+    echo 'Erro '.$ex_->getMessage();
 }
 ?>

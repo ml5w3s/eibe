@@ -26,4 +26,4 @@ CREATE TABLE usuario(
 
     SELECT * FROM bairro;
 
-ALTER TABLE usuario ADD senha VARCHAR(30);
+    ALTER TABLE usuario ADD senha VARCHAR(30);

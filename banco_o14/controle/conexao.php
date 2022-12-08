@@ -8,7 +8,7 @@ function conectar(){
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $conn->exec("set names UTF8");
     }catch(PDOException $ex){
-        echo "Deu ruim, chame o Ricardo entre: ".$ex->getMessage();
+        echo "Deu ruim, chame o Mauricio entre: ".$ex->getMessage();
         die;
     }
     return $conn;
