@@ -25,3 +25,5 @@ CREATE TABLE usuario(
     SELECT nome_usuario, nome_bairro FROM usuario INNER JOIN bairro ON bairro_usuario=cod_bairro;
 
     SELECT * FROM bairro;
+
+ALTER TABLE usuario ADD senha VARCHAR(30);
