@@ -7,10 +7,11 @@
     <title>Banco O14</title>
 </head>
 <body>
-    <form method="post" action="inserir_bairro.php">
+    <form method="post" action="../controle/inserir_bairro.php">
         <fieldset>
-            <label>Nome do bairro</label>
-            <input type="text" name="txt_bairro">
+            <legend><h3>Cadastro de bairros</h3></legend>
+            <label>Nome do bairro: </label>
+            <input type="text" name="txt_bairro" required><br>
             <input type="submit" value="Cadastrar">
         </fieldset>
     </form>
